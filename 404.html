@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=https://rampa-israel.netlify.app/">
+  <link rel="canonical" href="https://rampa-israel.netlify.app/">
+  <title>רמפה עברה לכתובת חדשה</title>
+  <script>
+    (function () {
+      var base = 'https://rampa-israel.netlify.app';
+      var prefix = '/rampa';
+      var path = location.pathname || '/';
+      if (path.indexOf(prefix) === 0) {
+        path = path.slice(prefix.length);
+      }
+      if (!path) path = '/';
+      if (path.charAt(0) !== '/') path = '/' + path;
+      var dest = base + path + location.search + location.hash;
+      var canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.href = dest;
+      location.replace(dest);
+    })();
+  </script>
+</head>
+<body>
+  <p>רמפה עברה לכתובת חדשה.</p>
+  <p><a href="https://rampa-israel.netlify.app/">לחצו כאן כדי להמשיך לרמפה</a></p>
+</body>
+</html>
